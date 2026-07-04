@@ -64,7 +64,7 @@ class AuthController extends Controller
         ]);
     }
 
-    public function me(Request $request)
+    public function user(Request $request)
     {
         return new UserResource($request->user());
     }
