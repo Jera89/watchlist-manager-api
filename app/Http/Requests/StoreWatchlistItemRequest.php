@@ -14,10 +14,7 @@ class StoreWatchlistItemRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'external_id'  => ['required', 'string'],
-            'title'        => ['required', 'string'],
-            'overview'     => ['nullable', 'string'],
-            'release_date' => ['nullable', 'date'],
+            'external_id'  => ['required', 'integer'],
         ];
     }
 }

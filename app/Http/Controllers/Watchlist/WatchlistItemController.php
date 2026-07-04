@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Watchlist;
 
-use App\Exceptions\DuplicateWatchlistItemException;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreWatchlistItemRequest;
 use App\Services\WatchlistService;

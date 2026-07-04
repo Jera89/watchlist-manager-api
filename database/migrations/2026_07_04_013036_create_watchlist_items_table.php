@@ -18,7 +18,7 @@ return new class extends Migration
                 ->cascadeOnDelete();
 
             // external movie reference
-            $table->string('external_id');
+            $table->unsignedBigInteger('external_id');
             $table->string('title');
             $table->text('overview')->nullable();
 
